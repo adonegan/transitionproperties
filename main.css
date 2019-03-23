@@ -3,11 +3,13 @@
     height: 50px;
     background-color: #bada55;
     transition-property: width, background-color;
-    transition-duration: 2s;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
 }
 
 .box:hover {
     width: 150px;
+    height: 150px;
     background-color: #e84610;
 }
 
@@ -15,9 +17,20 @@ a {
     color: #e84610;
     font-size: 16px;
     text-decoration: none;
-    transition: color 1s ease-in-out;
+    transition: background-color 1s ease-in-out 1s;
 }
 
 a:hover {
     color: #000;
+}
+
+.box2 {
+    background-color: #79797f;
+    width: 150px;
+    height: 150px;
+    transition: background-color 1s ease-in-out 1s;
+}
+
+.box2:hover {
+    background-color: #e84610;
 }
